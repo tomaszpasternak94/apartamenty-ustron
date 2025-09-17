@@ -53,7 +53,7 @@ async function renderLokale(){
 
       card.innerHTML = `
         <h3>${x.nazwa}</h3>
-        <span class="badge">${x.status || '—'}</span>
+        <span class="badge ${statusClass(x.status)}">${x.status || '—'}</span>
 
         <div class="kv">
           <p><strong>Powierzchnia:</strong> ${Number(x.powierzchnia_m2).toFixed(2)} m²</p>
