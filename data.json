@@ -4,15 +4,15 @@
     "nazwa": "Lokal A1 — 2 pokoje",
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
-    "cena_brutto": 560000,
+    "cena_brutto": 800000,
     "historia_ceny": [
       {
         "data": "2025-07-01",
-        "kwota": 570000
+        "kwota": 820000
       },
       {
         "data": "2025-08-15",
-        "kwota": 560000
+        "kwota": 810000
       }
     ]
   },
@@ -21,15 +21,117 @@
     "nazwa": "Lokal A2 — 2 pokoje",
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
-    "cena_brutto": 760000,
+    "cena_brutto": 800000,
     "historia_ceny": [
       {
         "data": "2025-07-01",
-        "kwota": 800000
+        "kwota": 820000
       },
       {
         "data": "2025-08-15",
-        "kwota": 800000
+        "kwota": 810000
+      }
+    ]
+  },
+  {
+    "id": "A3",
+    "nazwa": "Lokal A3 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 800000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 820000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 810000
+      }
+    ]
+  },
+  {
+    "id": "A4",
+    "nazwa": "Lokal A4 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 800000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 820000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 810000
+      }
+    ]
+  },
+  {
+    "id": "A5",
+    "nazwa": "Lokal A5 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 800000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 820000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 810000
+      }
+    ]
+  },
+  {
+    "id": "A6",
+    "nazwa": "Lokal A6 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 800000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 820000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 810000
+      }
+    ]
+  },
+  {
+    "id": "A7",
+    "nazwa": "Lokal A7 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 800000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 820000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 810000
+      }
+    ]
+  },
+  {
+    "id": "A8",
+    "nazwa": "Lokal A2 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 800000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 820000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 810000
       }
     ]
   }
