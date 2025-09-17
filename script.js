@@ -47,7 +47,7 @@ async function renderLokale(){
         .join(' · ');
 
       const historiaHTML = (x.historia_ceny || [])
-        .map(h => `<tr><td>${h.data}</td><td>${Number(h.kwota).toLocaleString('pl-PL')} zł</td><td>${h.uwagi || ''}</td></tr>`)
+        .map(h => `<tr><td>${h.data}</td><td>${Number(h.kwota).toLocaleString('pl-PL')} zł</td></tr>`)
         .join('');
 
       card.innerHTML = `
@@ -75,7 +75,7 @@ async function renderLokale(){
 
         <table class="historia" aria-label="Historia ceny – ${x.id || ''}" style="margin-top:.6rem">
           <caption style="text-align:left;margin:.4rem 0 .2rem;">Historia ceny — ${x.id || ''}</caption>
-          <thead><tr><th>Data</th><th>Cena brutto</th><th>Uwagi</th></tr></thead>
+          <thead><tr><th>Data</th><th>Cena brutto</th></tr></thead>
           <tbody>${historiaHTML}</tbody>
         </table>
       `;
