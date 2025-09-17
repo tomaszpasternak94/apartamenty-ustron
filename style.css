@@ -31,11 +31,18 @@ section{padding:3rem 1rem}
 .container{max-width:var(--maxw);margin:0 auto}
 
 /* NAV + HERO */
-header.hero{
+/* header.hero{
   background:linear-gradient(180deg, rgba(11,18,32,.92), rgba(11,18,32,.96));
   padding:2rem 1rem 2.2rem;
   border-bottom:1px solid var(--line);
   position:sticky; top:0; z-index:10; /* „przyklejony” header */
+/* }  */
+header.hero{
+  background: linear-gradient(180deg, rgba(11,18,32,.75), rgba(11,18,32,.9)),
+              url('assets/hero.jpg') center/cover no-repeat;
+  padding:2rem 1rem 2.2rem;
+  border-bottom:1px solid var(--line);
+  position:sticky; top:0; z-index:10;
 }
 header.hero h1{
   color:var(--gold);
