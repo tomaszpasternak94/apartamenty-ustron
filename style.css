@@ -131,20 +131,7 @@ footer{
 }
 
 /* różne kolory zależnie od statusu */
-.badge-green {
-  background:rgba(16,185,129,.15);
-  border:1px solid rgba(16,185,129,.4);
-  color:#34d399; /* zielony */
-}
+#lista-lokali .lokal .badge.badge-green  { background:rgba(16,185,129,.15); border:1px solid rgba(16,185,129,.4); color:#34d399 }
+#lista-lokali .lokal .badge.badge-orange { background:rgba(245,158,11,.15); border:1px solid rgba(245,158,11,.4); color:#fbbf24 }
+#lista-lokali .lokal .badge.badge-gray   { background:rgba(107,114,128,.15); border:1px solid rgba(107,114,128,.4); color:#9ca3af }
 
-.badge-orange {
-  background:rgba(245,158,11,.15);
-  border:1px solid rgba(245,158,11,.4);
-  color:#fbbf24; /* pomarańczowy */
-}
-
-.badge-gray {
-  background:rgba(107,114,128,.15);
-  border:1px solid rgba(107,114,128,.4);
-  color:#9ca3af; /* szary */
-}
