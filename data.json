@@ -15,5 +15,22 @@
         "kwota": 560000
       }
     ]
+  },
+  {
+    "id": "A2",
+    "nazwa": "Lokal A2 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 760000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 800000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 800000
+      }
+    ]
   }
 ]

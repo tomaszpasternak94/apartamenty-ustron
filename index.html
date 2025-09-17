@@ -1,53 +1,103 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Apartamenty Ustroń — oficjalny cennik i informacje</title>
-  <meta name="description" content="Oficjalna strona inwestycji: ceny ofertowe, cena za m², koszty dodatkowe i historia zmian cen.">
-  <link rel="preload" as="image" href="assets/hero.jpg">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Oficjalna strona inwestycji: ceny ofertowe, cena za m², koszty dodatkowe i historia zmian cen." />
+
+  <!-- premium fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css?v=2" />
+
+  <!-- social -->
+  <meta property="og:title" content="Apartamenty Ustroń — oficjalny cennik" />
+  <meta property="og:description" content="Ceny mieszkań, koszty dodatkowe i historia zmian." />
+  <meta property="og:type" content="website" />
 </head>
 <body>
+  <!-- HERO / NAV -->
   <header class="hero">
     <h1>Apartamenty Ustroń</h1>
     <p>Limitowana inwestycja — 8 apartamentów</p>
-    <nav>
-      <a href="#o-inwestycji">O inwestycji</a> |
-      <a href="#oferty">Oferty</a> |
-      <a href="#galeria">Galeria</a> |
-      <a href="#lokalizacja">Lokalizacja</a> |
+    <nav aria-label="Główna nawigacja">
+      <a href="#o-inwestycji">O inwestycji</a>
+      <a href="#oferty">Oferty</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#lokalizacja">Lokalizacja</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
+
   <main>
-    <section id="o-inwestycji">
+    <!-- O INWESTYCJI -->
+    <section id="o-inwestycji" class="container">
       <h2>O inwestycji</h2>
-      <p>Kameralny budynek w Ustroniu. Pełne dane: ceny, koszty dodatkowe, historia zmian cen.</p>
+      <div class="panel">
+        <p>Kameralny budynek w Ustroniu. Publikujemy pełne dane: ceny, cena za m², koszty dodatkowe oraz historię zmian cen dla każdego lokalu.</p>
+        <ul class="features" style="list-style:none; padding-left:0; margin-top:.8rem; display:flex; gap:.6rem; flex-wrap:wrap">
+          <li class="badge" style="border-radius:999px;">8 apartamentów</li>
+          <li class="badge" style="border-radius:999px;">Winda i miejsca postojowe</li>
+          <li class="badge" style="border-radius:999px;">Komórki lokatorskie</li>
+        </ul>
+      </div>
     </section>
-    <section id="oferty">
-      <h2>Oferty</h2>
+
+    <!-- OFERTY -->
+    <section id="oferty" class="container">
+      <h2>Oferty i ceny</h2>
+      <p class="muted">Dane ładują się z pliku <code>data.json</code>. Aktualizacja = edycja danych i push.</p>
       <div id="lista-lokali"></div>
     </section>
-    <section id="galeria">
+
+    <!-- GALERIA -->
+    <section id="galeria" class="container">
       <h2>Galeria</h2>
-      <img src="assets/galeria-1.jpg" alt="Wizualizacja 1" width="200">
+      <div class="grid">
+        <img src="assets/galeria-1.jpg" alt="Wizualizacja 1" />
+        <img src="assets/galeria-2.jpg" alt="Wizualizacja 2" />
+        <img src="assets/galeria-3.jpg" alt="Wizualizacja 3" />
+        <img src="assets/galeria-4.jpg" alt="Wizualizacja 4" />
+      </div>
     </section>
-    <section id="lokalizacja">
+
+    <!-- LOKALIZACJA -->
+    <section id="lokalizacja" class="container">
       <h2>Lokalizacja</h2>
-      <iframe src="https://maps.google.com/maps?q=Wis%C5%82a%2C%20Polska&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      <div class="map">
+        <iframe
+          title="Mapa lokalizacji"
+          src="https://maps.google.com/maps?q=Ustro%C5%84%2C%20Polska&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
-    <section id="kontakt">
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="container">
       <h2>Dane firmy</h2>
-      <p>Nazwa: Inwestor Sp. z o.o.<br>
-      NIP: 0000000000<br>
-      Adres: ul. Przykładowa 1, 00-000 Miasto<br>
-      E-mail: kontakt@przyklad.pl</p>
+      <div class="card">
+        <ul style="margin:0; padding-left:1rem;">
+          <li><strong>Nazwa:</strong> Przykładowy Inwestor Sp. z o.o.</li>
+          <li><strong>NIP:</strong> 0000000000 · <strong>REGON:</strong> 000000000 · <strong>KRS:</strong> 0000000000</li>
+          <li><strong>Adres:</strong> ul. Przykładowa 1, 00-000 Miasto</li>
+          <li><strong>E-mail:</strong> <a href="mailto:kontakt@przyklad.pl">kontakt@przyklad.pl</a></li>
+          <li><strong>Telefon:</strong> 123 456 789</li>
+        </ul>
+        <p class="muted" style="margin-top:.5rem;">Ostatnia aktualizacja: <time id="last-update"></time></p>
+      </div>
     </section>
   </main>
+
+  <!-- STOPKA -->
   <footer>
-    <p>&copy; 2025 Inwestor Sp. z o.o.</p>
+    <p>&copy; <span id="year"></span> Przykładowy Inwestor Sp. z o.o. · Strona informacyjna inwestycji. Brak cookies, brak śledzenia.</p>
   </footer>
-  <script src="script.js"></script>
+
+  <!-- scripts -->
+  <script src="script.js?v=2"></script>
 </body>
 </html>

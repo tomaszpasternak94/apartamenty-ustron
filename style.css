@@ -1,6 +1,123 @@
-body{font-family:sans-serif;margin:0;padding:0;line-height:1.6}
-header.hero{background:#0b1220;color:#fff;text-align:center;padding:2rem}
-header.hero h1{margin:0;color:#d4af37}
-nav a{color:#fff;margin:0 .5rem;text-decoration:none}
-section{padding:2rem}
-#lista-lokali .lokal{border:1px solid #ccc;padding:1rem;margin:.5rem 0;border-radius:8px;background:#f9f9f9}
+:root{
+  --bg:#0b1220;       /* tło strony (granat) */
+  --panel:#0f172a;    /* karty/sekcje */
+  --line:rgba(255,255,255,.10);
+  --text:#e6e6e6;
+  --muted:#aab1c2;
+  --gold:#d4af37;     /* akcent */
+  --accent:#4db8ff;   /* link/hover subtelny */
+  --maxw:1100px;
+}
+
+/* reset & baza */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+h1,h2,h3{margin:0 0 .6rem}
+h1,h2{font-family:'Playfair Display',serif}
+h2{font-size:1.9rem;color:var(--gold)}
+a{color:var(--accent);text-decoration:none}
+a:hover{opacity:.9}
+
+/* layout */
+section{padding:3rem 1rem}
+.container{max-width:var(--maxw);margin:0 auto}
+
+/* NAV + HERO */
+header.hero{
+  background:linear-gradient(180deg, rgba(11,18,32,.92), rgba(11,18,32,.96));
+  padding:2rem 1rem 2.2rem;
+  border-bottom:1px solid var(--line);
+  position:sticky; top:0; z-index:10; /* „przyklejony” header */
+}
+header.hero h1{
+  color:var(--gold);
+  text-align:center;
+  font-size:2.2rem;
+  letter-spacing:.5px;
+  margin-bottom:.25rem;
+}
+header.hero p{
+  text-align:center; color:var(--muted); margin:.1rem 0 1rem;
+}
+header.hero nav{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+header.hero nav a{
+  color:var(--text); position:relative; padding:.2rem .1rem;
+}
+header.hero nav a::after{
+  content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0;
+  background:var(--gold); transition:width .25s ease;
+}
+header.hero nav a:hover::after{width:100%}
+
+/* sekcje: karty */
+.panel{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1.2rem;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+/* OFERTY */
+#lista-lokali{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1rem}
+@media (max-width:1000px){#lista-lokali{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){#lista-lokali{grid-template-columns:1fr}}
+
+#lista-lokali .lokal{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:1rem 1rem .8rem;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+#lista-lokali .lokal:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 40px rgba(0,0,0,.35);
+  border-color:rgba(255,255,255,.18);
+}
+#lista-lokali .lokal h3{margin:.1rem 0 .4rem; font-size:1.1rem}
+.badge{
+  display:inline-block; font-size:.78rem; padding:.15rem .55rem; border-radius:999px;
+  background:rgba(212,175,55,.15); border:1px solid rgba(212,175,55,.35); color:#f5e6b5; margin:.2rem 0 .4rem;
+}
+.kv{display:grid; grid-template-columns:1fr 1fr; gap:.35rem .8rem; margin:.2rem 0}
+.kv p{margin:0; color:#d8dbe6}
+.cena{
+  margin:.6rem 0 .2rem; padding:.6rem .7rem; border:2px solid var(--gold);
+  border-radius:10px; font-weight:700; background:rgba(212,175,55,.06)
+}
+
+/* GALERIA */
+#galeria .grid{display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem}
+#galeria img{
+  width:100%; height:200px; object-fit:cover; border-radius:12px; border:1px solid var(--line);
+  filter:saturate(.95); transition:transform .25s ease, filter .25s ease
+}
+#galeria img:hover{transform:scale(1.02); filter:saturate(1)}
+
+/* MAPA */
+#lokalizacja .map{
+  border:1px solid var(--line); border-radius:12px; overflow:hidden; background:#0a0f1b
+}
+#lokalizacja iframe{width:100%; height:380px; border:0}
+
+/* KONTAKT */
+#kontakt .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1rem}
+#kontakt .muted{color:var(--muted); font-size:.95rem}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--line);
+  color:#cfd6e6; text-align:center; padding:1rem; margin-top:2rem
+}
+
+/* drobiazgi */
+.muted{color:var(--muted)}
