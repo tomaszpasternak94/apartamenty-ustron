@@ -6,12 +6,11 @@
 })();
 
 // dynamic status badge color
-function statusClass(status) {
-  if (!status) return '';
-  const s = status.toLowerCase();
-  if (s.includes('dostępny'))   return 'badge-green';
-  if (s.includes('zarezerw'))   return 'badge-orange';
-  if (s.includes('niedostęp'))  return 'badge-gray';
+function statusClass(status){
+  const s = (status || '').toLowerCase().trim();
+  if (s === 'dostępny')      return 'badge-green';
+  if (s === 'zarezerwowany') return 'badge-orange';
+  if (s === 'niedostępny')   return 'badge-gray';
   return '';
 }
 
