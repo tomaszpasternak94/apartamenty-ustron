@@ -5,6 +5,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 800000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -22,6 +26,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 810000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -39,6 +47,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 820000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -56,6 +68,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 830000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -73,6 +89,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 840000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -90,6 +110,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 850000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -107,6 +131,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 860000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
@@ -124,6 +152,10 @@
     "powierzchnia_m2": 45.2,
     "status": "dostępny",
     "cena_brutto": 870000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
+      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+    ],
     "historia_ceny": [
       {
         "data": "2025-07-01",
