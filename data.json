@@ -1,0 +1,19 @@
+[
+  {
+    "id": "A1",
+    "nazwa": "Lokal A1 — 2 pokoje",
+    "powierzchnia_m2": 45.2,
+    "status": "dostępny",
+    "cena_brutto": 560000,
+    "historia_ceny": [
+      {
+        "data": "2025-07-01",
+        "kwota": 570000
+      },
+      {
+        "data": "2025-08-15",
+        "kwota": 560000
+      }
+    ]
+  }
+]
