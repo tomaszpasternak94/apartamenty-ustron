@@ -135,3 +135,25 @@ footer{
 #lista-lokali .lokal .badge.badge-orange { background:rgba(245,158,11,.15); border:1px solid rgba(245,158,11,.4); color:#fbbf24 }
 #lista-lokali .lokal .badge.badge-gray   { background:rgba(107,114,128,.15); border:1px solid rgba(107,114,128,.4); color:#9ca3af }
 
+table.historia{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  margin-top:.4rem;
+}
+table.historia th,
+table.historia td{
+  padding:.35rem .5rem;
+}
+
+table.historia th:nth-child(1),
+table.historia td:nth-child(1){
+  width:9.5rem;
+  white-space:nowrap;
+}
+
+table.historia th:nth-child(2),
+table.historia td:nth-child(2){
+  text-align:right;
+  white-space:nowrap;
+}
