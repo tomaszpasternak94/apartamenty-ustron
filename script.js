@@ -5,6 +5,16 @@
   if (u) u.textContent = new Date().toISOString().slice(0,10);
 })();
 
+// dynamic status badge color
+function statusClass(status) {
+  if (!status) return '';
+  const s = status.toLowerCase();
+  if (s.includes('dostępny'))   return 'badge-green';
+  if (s.includes('zarezerw'))   return 'badge-orange';
+  if (s.includes('niedostęp'))  return 'badge-gray';
+  return '';
+}
+
 // Render listy lokali z data.json
 async function renderLokale(){
   const root = document.getElementById('lista-lokali');

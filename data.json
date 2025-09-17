@@ -24,7 +24,7 @@
     "id": "A2",
     "nazwa": "Lokal A2 — 2 pokoje",
     "powierzchnia_m2": 45.2,
-    "status": "dostępny",
+    "status": "zarezerwowany",
     "cena_brutto": 810000,
     "koszty_dodatkowe": [
       {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
@@ -45,7 +45,7 @@
     "id": "A3",
     "nazwa": "Lokal A3 — 2 pokoje",
     "powierzchnia_m2": 45.2,
-    "status": "dostępny",
+    "status": "niedostępny",
     "cena_brutto": 820000,
     "koszty_dodatkowe": [
       {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
