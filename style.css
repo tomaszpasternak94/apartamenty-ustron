@@ -577,3 +577,26 @@ table.historia th, table.historia td{ padding:.25rem .3rem; }
   text-align:center;         /* środek w każdej komórce */
   white-space:nowrap;
 }
+
+/* Historia cen – zawsze centralnie */
+#lista-lokali .lokal table.historia{
+  display:table;
+  margin:0.8rem auto 0 auto; /* wyśrodkowanie */
+  border-collapse:collapse;
+  text-align:center;
+  width:auto;                /* niech ma tylko tyle szerokości ile potrzeba */
+}
+
+#lista-lokali .lokal table.historia caption{
+  caption-side:top;
+  text-align:center;
+  font-weight:600;
+  margin-bottom:.4rem;
+}
+
+#lista-lokali .lokal table.historia th,
+#lista-lokali .lokal table.historia td{
+  padding:.3rem 1rem;
+  text-align:center;
+  white-space:nowrap;        /* żeby nie łamało się na dwie linie */
+}
