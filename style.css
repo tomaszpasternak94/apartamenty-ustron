@@ -460,3 +460,35 @@ details.details{ margin-top:.6rem; }
 table.historia{ margin-top:.8rem; }
 table.historia th, table.historia td{ padding:.25rem .3rem; }
 
+/* Blok ceny – wycentrowany */
+.cena{
+  margin:1rem 0 1rem;
+  padding:1rem 1rem;
+  border:2px solid #7B6A58;
+  border-radius:12px;
+  background:#7B6A58;
+  color:#EFE2D1;
+  line-height:1.55;
+  text-align:center;        /* wyśrodkowanie tekstu */
+}
+
+/* Separator między linijkami */
+.cena > div + div{
+  position:relative;
+  margin-top:.7rem;
+  padding-top:.7rem;
+}
+.cena > div + div::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:20%;                /* żeby kreska była krótsza */
+  width:60%;
+  height:1px;
+  background:rgba(239,226,209,.55);
+  border-radius:2px;
+}
+
+/* Hierarchia wagowa */
+.cena > div:first-child{ font-weight:800; font-size:1.1rem; }
+.cena > div:last-child{ font-weight:700; opacity:.98; }
