@@ -325,3 +325,7 @@ footer{ border-top:1px solid var(--line); color:#D6DAE2; text-align:center; padd
   font-weight:500;
   margin-top:.2rem;
 }
+
+#o-inwestycji .fact-v div {
+  line-height: 1.4;
+}
