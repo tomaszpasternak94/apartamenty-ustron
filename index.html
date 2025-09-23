@@ -13,9 +13,24 @@
   <!-- styles -->
   <link rel="stylesheet" href="style.css?v=2" />
 
-  <!-- lightbox -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" defer></script>
+<!-- jQuery (wymagane przez Lightbox2) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Lightbox2 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<script>
+  // Ustawienia – strzałki między zdjęciami, lepsze animacje
+  lightbox.option({
+    'resizeDuration': 200,
+    'imageFadeDuration': 200,
+    'fadeDuration': 200,
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true
+  });
+</script>
+
 
   <!-- social -->
   <meta property="og:title" content="Lokale mieszkalne Ustroń — oficjalny cennik" />
