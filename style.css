@@ -385,3 +385,34 @@ footer{
   background:#7B6A58;   /* ciemny taupe */
   color:#EFE2D1;        /* jasny beżowy tekst */
 }
+
+/* Tekst w kafelku – grafit zamiast szarego */
+#lista-lokali .lokal p,
+#lista-lokali .lokal .kv p {
+  color:#212429;   /* ciemny, czytelny */
+}
+
+/* Cena – lepsze odstępy i hierarchia */
+.cena{
+  margin:.9rem 0 .8rem;   /* większy odstęp od reszty */
+  padding:.9rem 1rem;
+  border:2px solid #7B6A58;
+  border-radius:12px;
+  background:#7B6A58;
+  color:#EFE2D1;
+  line-height:1.5;        /* luźniejsza linia */
+}
+
+/* Pierwsza linia ceny (brutto) większa */
+.cena strong{
+  display:block;
+  font-size:1.1rem;
+  margin-bottom:.4rem;    /* odstęp do kolejnej */
+}
+
+/* Cena za m2 trochę mniejsza */
+.cena span{
+  display:block;
+  font-size:1rem;
+  opacity:.95;
+}
