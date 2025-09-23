@@ -255,3 +255,45 @@ footer{
 .lb-nav a.lb-prev, .lb-nav a.lb-next{ opacity:.8 }
 .lb-nav a.lb-prev:hover, .lb-nav a.lb-next:hover{ opacity:1 }
 .lb-close{ filter:invert(100%) sepia(30%) saturate(0%) hue-rotate(180deg) }
+
+/* === HERO poprawki czytelności === */
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 3px 12px rgba(0,0,0,.6); /* mocniejszy cień */
+  max-width: var(--maxw);
+  margin-inline: auto;
+}
+
+/* Tło za tekstem (opcjonalne, tylko pod nagłówkiem i opisem) */
+.hero h1,
+.hero p {
+  background: rgba(0,0,0,.35);
+  display: inline-block;
+  padding: .25em .6em;
+  border-radius: 6px;
+}
+
+/* H1 lekko większe i pogrubione */
+.hero h1 {
+  font-size: clamp(24px, 3.8vw, 42px);
+  margin: 0 0 .4rem 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* Nawigacja hero – mocniejszy kontrast */
+.hero-nav a {
+  background: rgba(0,0,0,.55);  /* zamiast jasnego */
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: .5rem .85rem;
+  border-radius: 999px;
+  backdrop-filter: blur(2px);
+  transition: background .2s;
+}
+.hero-nav a:hover {
+  background: rgba(0,0,0,.7);
+}
