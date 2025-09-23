@@ -350,3 +350,38 @@ footer{
   border:1px solid rgba(107,114,128,.45);
   color:#9ca3af;
 }
+
+/* Kafelki lokali – jasne, beżowe */
+#lista-lokali .lokal{
+  background:#EFE2D1; /* beż */
+  color:#212429;      /* grafitowy tekst */
+  border:1px solid rgba(123,106,88,.25);
+  border-radius:16px;
+  padding:1rem 1rem .9rem;
+  transition:transform .18s, box-shadow .18s, border-color .18s;
+}
+#lista-lokali .lokal:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 40px rgba(0,0,0,.25);
+  border-color:rgba(123,106,88,.45);
+}
+
+/* Nagłówek w kafelku */
+#lista-lokali .lokal h3{
+  margin:.1rem 0 .5rem;
+  font-size:1.14rem;
+  color:#7B6A58;   /* brąz */
+  letter-spacing:.2px;
+}
+
+/* Cena – kontrastowy ciemny blok */
+.cena{
+  margin:.8rem 0 .2rem;
+  padding:.7rem .8rem;
+  border:2px solid #7B6A58;
+  border-radius:12px;
+  font-weight:800;
+  font-size:1.04rem;
+  background:#7B6A58;   /* ciemny taupe */
+  color:#EFE2D1;        /* jasny beżowy tekst */
+}
