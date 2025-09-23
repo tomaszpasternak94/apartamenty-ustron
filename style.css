@@ -167,11 +167,11 @@ table.historia td:nth-child(2){
 
 /* === MOTYW jasne tło + ciemne panele === */
 :root{
-  --bg: rgba(220, 198, 172);        /* tło strony – jasny szary */
-  --panel: rgb(86,86,86);        /* panele/karty – ciemny szary */
+  --bg: rgb(252, 224, 193);        /* tło strony – jasny szary */
+  --panel: rgb(110, 103, 103);        /* panele/karty – ciemny szary */
   --line: rgba(0,0,0,.15);       /* delikatne obramowania */
   --text: #222;                  /* tekst bazowy (czytelny na jasnym tle) */
-  --muted: #555;                 /* przygaszony tekst */
+  --muted: #227e26;                 /* przygaszony tekst */
   --gold: rgb(218, 7, 70);      /* akcent beż */
   --accent: rgb(38, 7, 173);    /* link/hover */
 }
