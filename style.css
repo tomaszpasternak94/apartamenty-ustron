@@ -165,47 +165,54 @@ table.historia td:nth-child(2){
   white-space:nowrap;
 }
 
-/* === MOTYW: elewacja (86,86,86 / 224,200,173 / 228,229,229) === */
+/* === MOTYW jasne tło + ciemne panele === */
 :root{
-  --bg: rgb(86,86,86);           /* tło strony */
-  --panel: rgb(228,229,229);     /* karty/sekcje (jasny szary) */
-  --line: rgba(86,86,86,.25);    /* obramowania */
-  --text: #f2f2f2;               /* tekst na ciemnym tle */
-  --muted: #d6d6d6;              /* subtelny tekst na ciemnym tle */
-  --gold: rgb(224,200,173);      /* akcent = beż (pozostaw nazwy zmiennej 'gold') */
+  --bg: rgb(228,229,229);        /* tło strony – jasny szary */
+  --panel: rgb(86,86,86);        /* panele/karty – ciemny szary */
+  --line: rgba(0,0,0,.15);       /* delikatne obramowania */
+  --text: #222;                  /* tekst bazowy (czytelny na jasnym tle) */
+  --muted: #555;                 /* przygaszony tekst */
+  --gold: rgb(224,200,173);      /* akcent beż */
   --accent: rgb(224,200,173);    /* link/hover */
 }
 
-/* header/hero – overlay w odcieniach szarości zamiast granatu */
+/* HERO z beżem jako akcent */
 header.hero{
   background:
-    linear-gradient(180deg, rgba(86,86,86,.75), rgba(86,86,86,.9)),
+    linear-gradient(180deg, rgba(228,229,229,.92), rgba(228,229,229,.96)),
     url('assets/hero.jpg') center/cover no-repeat;
-  box-shadow: 0 4px 15px rgba(0,0,0,.35);
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
 }
+header.hero h1{ color: var(--panel); }
+header.hero p{ color: var(--muted); }
+header.hero nav a{ color: var(--panel); }
+header.hero nav a::after{ background: var(--gold); }
 
-/* karty/sekcje: jasne panele + ciemny tekst wewnątrz (bo body jest ciemne) */
+/* karty – ciemne */
 .panel, #lista-lokali .lokal, #kontakt .card{
   background: var(--panel);
   border: 1px solid var(--line);
-  color: #222;                   /* tekst na jasnym panelu */
-  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+  color: #f2f2f2; /* jasny tekst na ciemnym tle */
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
 }
-#lista-lokali .lokal h3{ color:#1f1f1f; }
-#lista-lokali .lokal .kv p{ color:#3b3b3b; }
+#lista-lokali .lokal h3{ color: var(--gold); }
+#lista-lokali .lokal .kv p{ color: #ddd; }
 
-/* akcent ceny – beż */
+/* cena – beżowy box na tle szarości */
 .cena{
   border: 2px solid var(--gold);
-  background: rgba(224,200,173,.18);
-  color: #1f1f1f;
+  background: rgba(224,200,173,.12);
+  color: #fff;
 }
 
 /* linki */
-a{ color: var(--accent); }
-a:hover{ opacity: 1; filter: brightness(.95); }
+a{ color: var(--panel); }
+a:hover{ color: var(--gold); }
 
-/* podkreślenie w menu na beż */
-header.hero nav a::after{ background: var(--gold); }
+/* badge statusów (zachowujemy oryginalne kolory) */
+#lista-lokali .lokal .badge.badge-green  { background:rgba(16,185,129,.15); border:1px solid rgba(16,185,129,.4); color:#34d399 }
+#lista-lokali .lokal .badge.badge-orange { background:rgba(245,158,11,.15); border:1px solid rgba(245,158,11,.4); color:#fbbf24 }
+#lista-lokali .lokal .badge.badge-gray   { background:rgba(107,114,128,.15); border:1px solid rgba(107,114,128,.4); color:#9ca3af }
 
-/* statusy (zostawiamy semantyczne kolory) – jeśli wolisz je też „elewacyjne”, daj znać */
