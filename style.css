@@ -416,3 +416,47 @@ footer{
   font-size:1rem;
   opacity:.95;
 }
+
+/* 1) Teksty danych (Powierzchnia, Piętro, itp.) – ciemne, czytelne */
+#lista-lokali .lokal .kv p,
+#lista-lokali .lokal .kv p strong {
+  color:#212429;             /* grafit z palety */
+}
+
+/* 2) Blok ceny – więcej luzu + separator między wierszami */
+.cena{
+  margin:1rem 0 1rem;        /* odstęp od reszty (żeby nie zlewać z datą) */
+  padding:1rem 1rem;
+  border:2px solid #7B6A58;
+  border-radius:12px;
+  background:#7B6A58;
+  color:#EFE2D1;
+  line-height:1.55;
+}
+
+/* Każdy kolejny wiersz w .cena ma oddech i cienki pasek nie na całą szerokość */
+.cena > div + div{
+  position:relative;
+  margin-top:.7rem;          /* odstęp między „brutto” a „za m²” */
+  padding-top:.7rem;
+}
+.cena > div + div::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:.5rem;                /* nie od samej krawędzi */
+  width:60%;                 /* krótszy pasek */
+  height:1px;
+  background:rgba(239,226,209,.55); /* jasny, subtelny */
+  border-radius:2px;
+}
+
+/* Opcjonalnie: różna waga typograficzna – „brutto” ważniejsze */
+.cena > div:first-child{ font-weight:800; }
+.cena > div:last-child{ font-weight:700; opacity:.98; }
+
+/* 3) Drobne oddechy pod detalami i tabelą historii */
+details.details{ margin-top:.6rem; }
+table.historia{ margin-top:.8rem; }
+table.historia th, table.historia td{ padding:.25rem .3rem; }
+
