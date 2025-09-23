@@ -246,3 +246,45 @@ footer{
 .panel:focus-within, #lista-lokali .lokal:focus-within{
   outline:2px solid rgba(239,226,209,.45); outline-offset:2px;
 }
+
+/* === Historia cen: center + odstęp + separator === */
+
+/* samą tabelę odsuńmy nieco niżej, wciąż shrink-to-fit na środku */
+#lista-lokali .lokal table.historia{
+  display:inline-table;      /* zostaje wąska */
+  width:auto;
+  margin:1.4rem auto 0 auto; /* ↓ większy odstęp od bloku ceny */
+  border-collapse:collapse;
+  table-layout:auto;
+  text-align:center;
+}
+
+/* caption ma w JS text-align:left – nadpisujemy to świadomie (!important) */
+#lista-lokali .lokal table.historia caption{
+  display:block;
+  text-align:center !important;
+  margin:0 auto .4rem !important;
+  font-weight:700;
+  color:#212429;
+}
+
+/* separator nad napisem "Historia cen" */
+#lista-lokali .lokal table.historia caption::before{
+  content:"";
+  display:block;
+  width:60%;
+  height:1px;
+  margin:0 auto .6rem;       /* odstęp pod kreską */
+  background:rgba(123,106,88,.45); /* taupe, spójny z paletą */
+  border-radius:2px;
+  opacity:.8;
+}
+
+/* komórki – czysto w środku */
+#lista-lokali .lokal table.historia th,
+#lista-lokali .lokal table.historia td{
+  padding:.3rem 1rem;
+  white-space:nowrap;
+  text-align:center;
+  color:#212429;
+}
