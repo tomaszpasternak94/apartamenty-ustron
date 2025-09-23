@@ -39,7 +39,7 @@ section{padding:3rem 1rem}
 /* }  */
 header.hero{
   background: linear-gradient(180deg, rgba(11,18,32,.75), rgba(11,18,32,.9)),
-              url('assets/hero1.jpg') center/cover no-repeat;
+              url('assets/wiz4.jpg') center/cover no-repeat;
   padding:2rem 1rem 2.2rem;
   box-shadow: 0 4px 15px rgba(0,0,0,.4);
   position:sticky; top:0; z-index:10;
