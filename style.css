@@ -167,7 +167,7 @@ table.historia td:nth-child(2){
 
 /* === MOTYW jasne tło + ciemne panele === */
 :root{
-  --bg: rgb(228,229,229);        /* tło strony – jasny szary */
+  --bg: rgba(220, 198, 172);        /* tło strony – jasny szary */
   --panel: rgb(86,86,86);        /* panele/karty – ciemny szary */
   --line: rgba(0,0,0,.15);       /* delikatne obramowania */
   --text: #222;                  /* tekst bazowy (czytelny na jasnym tle) */
