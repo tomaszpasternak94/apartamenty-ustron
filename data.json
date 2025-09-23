@@ -1,169 +1,18 @@
 [
   {
-    "id": "A1",
-    "nazwa": "Lokal A1 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
+    "id": "56BH1",
+    "nazwa": "Lokal mieszkalny NR 56BH1",
+    "powierzchnia_m2": 58.96,
     "status": "dostępny",
-    "cena_brutto": 800000,
+    "cena_m2": 12000,
     "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
     ],
     "historia_ceny": [
       {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A2",
-    "nazwa": "Lokal A2 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "zarezerwowany",
-    "cena_brutto": 810000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A3",
-    "nazwa": "Lokal A3 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "niedostępny",
-    "cena_brutto": 820000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A4",
-    "nazwa": "Lokal A4 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "dostępny",
-    "cena_brutto": 830000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A5",
-    "nazwa": "Lokal A5 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "zarezerwowany",
-    "cena_brutto": 840000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A6",
-    "nazwa": "Lokal A6 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "dostępny",
-    "cena_brutto": 850000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A7",
-    "nazwa": "Lokal A7 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "zarezerwowany",
-    "cena_brutto": 860000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
-      }
-    ]
-  },
-  {
-    "id": "A8",
-    "nazwa": "Lokal A2 — 2 pokoje",
-    "powierzchnia_m2": 45.2,
-    "status": "dostępny",
-    "cena_brutto": 870000,
-    "koszty_dodatkowe": [
-      {"nazwa":"Miejsce postojowe", "kwota": 50000, "opcjonalnie": true},
-      {"nazwa":"Komórka lokatorska", "kwota": 15000, "opcjonalnie": false}
-    ],
-    "historia_ceny": [
-      {
-        "data": "2025-07-01",
-        "kwota": 820000
-      },
-      {
-        "data": "2025-08-15",
-        "kwota": 810000
+        "data": "2025-09-23",
+        "cena_m2": 12000
       }
     ]
   }
