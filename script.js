@@ -61,8 +61,9 @@ async function renderLokale(){
       card.className = 'lokal';
 
       const kosztyHTML = (x.koszty_dodatkowe || [])
-        .map(k => `<li>${k.nazwa}: ${Number(k.kwota).toLocaleString('pl-PL')} zł${k.opcjonalnie ? ' (opcjonalnie)' : ''}</li>`)
+        .map(k => `<li>${k.nazwa}: <span class="kwota">${Number(k.kwota).toLocaleString('pl-PL')} zł</span>${k.opcjonalnie ? ' (opcjonalnie)' : ''}</li>`)
         .join('') || '<li>Brak</li>';
+
 
       // Historia: obsługa wpisów z kwotą całkowitą *albo* z ceną za m2
       const historiaHTML = (x.historia_ceny || [])

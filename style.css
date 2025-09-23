@@ -229,3 +229,15 @@ footer{ border-top:1px solid var(--line); color:#D6DAE2; text-align:center; padd
 .panel:focus-within, #lista-lokali .lokal:focus-within{
   outline:2px solid rgba(239,226,209,.45); outline-offset:2px;
 }
+
+/* Koszty dodatkowe – wyróżnienie kwoty */
+#lista-lokali .lokal details ul li{
+  margin:.25rem 0;
+  line-height:1.5;
+}
+
+#lista-lokali .lokal details ul li .kwota{
+  font-weight:700;
+  color:var(--accent);     /* taupe (#7B6A58) */
+  margin-left:.25rem;
+}
