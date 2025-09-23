@@ -15,5 +15,158 @@
         "cena_m2": 12000
       }
     ]
+  },
+  {
+    "id": "56BG1",
+    "nazwa": "Lokal mieszkalny NR 56BG1",
+    "powierzchnia_m2": 58.27,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BF1",
+    "nazwa": "Lokal mieszkalny NR 56BF1",
+    "powierzchnia_m2": 58.29,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BE1",
+    "nazwa": "Lokal mieszkalny NR 56BE1",
+    "powierzchnia_m2": 58.23,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BD1",
+    "nazwa": "Lokal mieszkalny NR 56BD1",
+    "powierzchnia_m2": 58.59,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BH2",
+    "nazwa": "Lokal mieszkalny NR 56BH2",
+    "powierzchnia_m2": 72.23,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BG2",
+    "nazwa": "Lokal mieszkalny NR 56BG2",
+    "powierzchnia_m2": 71.50,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BF2",
+    "nazwa": "Lokal mieszkalny NR 56BF2",
+    "powierzchnia_m2": 71.40,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BE2",
+    "nazwa": "Lokal mieszkalny NR 56BE2",
+    "powierzchnia_m2": 72.34,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
+  },
+  {
+    "id": "56BD2",
+    "nazwa": "Lokal mieszkalny NR 56BD2",
+    "powierzchnia_m2": 72.69,
+    "status": "dostępny",
+    "cena_m2": 12000,
+    "koszty_dodatkowe": [
+      {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
+      {"nazwa":"Miejsce parkingowe 2", "kwota": 12300, "opcjonalnie": true}
+    ],
+    "historia_ceny": [
+      {
+        "data": "2025-09-23",
+        "cena_m2": 12000
+      }
+    ]
   }
 ]
