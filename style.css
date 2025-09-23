@@ -164,3 +164,48 @@ table.historia td:nth-child(2){
   text-align:right;
   white-space:nowrap;
 }
+
+/* === MOTYW: elewacja (86,86,86 / 224,200,173 / 228,229,229) === */
+:root{
+  --bg: rgb(86,86,86);           /* tło strony */
+  --panel: rgb(228,229,229);     /* karty/sekcje (jasny szary) */
+  --line: rgba(86,86,86,.25);    /* obramowania */
+  --text: #f2f2f2;               /* tekst na ciemnym tle */
+  --muted: #d6d6d6;              /* subtelny tekst na ciemnym tle */
+  --gold: rgb(224,200,173);      /* akcent = beż (pozostaw nazwy zmiennej 'gold') */
+  --accent: rgb(224,200,173);    /* link/hover */
+}
+
+/* header/hero – overlay w odcieniach szarości zamiast granatu */
+header.hero{
+  background:
+    linear-gradient(180deg, rgba(86,86,86,.75), rgba(86,86,86,.9)),
+    url('assets/hero.jpg') center/cover no-repeat;
+  box-shadow: 0 4px 15px rgba(0,0,0,.35);
+}
+
+/* karty/sekcje: jasne panele + ciemny tekst wewnątrz (bo body jest ciemne) */
+.panel, #lista-lokali .lokal, #kontakt .card{
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: #222;                   /* tekst na jasnym panelu */
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+}
+#lista-lokali .lokal h3{ color:#1f1f1f; }
+#lista-lokali .lokal .kv p{ color:#3b3b3b; }
+
+/* akcent ceny – beż */
+.cena{
+  border: 2px solid var(--gold);
+  background: rgba(224,200,173,.18);
+  color: #1f1f1f;
+}
+
+/* linki */
+a{ color: var(--accent); }
+a:hover{ opacity: 1; filter: brightness(.95); }
+
+/* podkreślenie w menu na beż */
+header.hero nav a::after{ background: var(--gold); }
+
+/* statusy (zostawiamy semantyczne kolory) – jeśli wolisz je też „elewacyjne”, daj znać */
