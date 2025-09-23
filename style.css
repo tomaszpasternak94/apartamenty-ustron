@@ -172,8 +172,8 @@ table.historia td:nth-child(2){
   --line: rgba(0,0,0,.15);       /* delikatne obramowania */
   --text: #222;                  /* tekst bazowy (czytelny na jasnym tle) */
   --muted: #555;                 /* przygaszony tekst */
-  --gold: rgb(224,200,173);      /* akcent beż */
-  --accent: rgb(224,200,173);    /* link/hover */
+  --gold: rgb(218, 7, 70);      /* akcent beż */
+  --accent: rgb(38, 7, 173);    /* link/hover */
 }
 
 /* HERO z beżem jako akcent */
