@@ -195,3 +195,30 @@ table.historia td:nth-child(2){
   border-radius: 8px;
   margin-bottom: .5rem;
 }
+
+/* === Lightbox custom === */
+.lb-data .lb-caption {
+  color: var(--gold);   /* podpis pod zdjęciem złoty */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+.lb-data .lb-number {
+  color: var(--muted);  /* numer zdjęcia jaśniejszy */
+  font-size: .85rem;
+}
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 0.8;
+}
+
+.lb-nav a.lb-prev:hover,
+.lb-nav a.lb-next:hover {
+  opacity: 1;
+}
+
+.lb-close {
+  filter: invert(100%) sepia(30%) saturate(0%) hue-rotate(180deg);
+}
