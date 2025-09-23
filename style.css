@@ -288,3 +288,45 @@ footer{
   text-align:center;
   color:#212429;
 }
+
+/* === HISTORIA CEN — FINAL FIX: center + odstęp + separator === */
+
+#lista-lokali .lokal table.historia{
+  display:inline-table;           /* shrink-to-fit i da się wycentrować */
+  width:auto;
+  margin:1.6rem auto 0 auto;      /* więcej przestrzeni pod blokiem ceny */
+  border-collapse:collapse;
+  table-layout:auto;
+  text-align:center;
+}
+
+#lista-lokali .lokal table.historia caption{
+  display:table-caption !important;   /* przywraca prawdziwy caption (nad tabelą) */
+  caption-side:top;
+  text-align:center !important;       /* nadpisuje inline z JS */
+  margin:0 !important;                /* zeruje inline margin */
+  padding:0;                          /* czyści padding (używamy pseudo) */
+  font-weight:700;
+  color:#212429;
+}
+
+/* separator nad napisem "Historia cen" */
+#lista-lokali .lokal table.historia caption::before{
+  content:"";
+  display:block;
+  width:56%;
+  height:1px;
+  margin:0 auto .6rem;                /* odstęp pod kreską */
+  background:rgba(123,106,88,.45);    /* taupe z palety */
+  border-radius:2px;
+  opacity:.9;
+}
+
+/* komórki: centrum + kompakt */
+#lista-lokali .lokal table.historia th,
+#lista-lokali .lokal table.historia td{
+  padding:.32rem 1rem;
+  white-space:nowrap;
+  text-align:center;
+  color:#212429;
+}
