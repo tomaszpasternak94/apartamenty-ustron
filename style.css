@@ -241,3 +241,41 @@ footer{ border-top:1px solid var(--line); color:#D6DAE2; text-align:center; padd
   color:var(--accent);     /* taupe (#7B6A58) */
   margin-left:.25rem;
 }
+
+/* === Blok faktów pod opisem – O inwestycji === */
+#o-inwestycji .facts-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:.8rem;
+  margin:1.1rem 0 0;
+}
+@media (max-width:800px){
+  #o-inwestycji .facts-grid{ grid-template-columns:1fr; }
+}
+
+#o-inwestycji .fact{
+  background:rgba(239,226,209,.06);          /* lekkie beżowe tło */
+  border:1px solid rgba(123,106,88,.35);     /* taupe o-b-r-a-m-o-w-a-n-i-e */
+  border-radius:12px;
+  padding:.85rem 1rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.18) inset, 0 2px 8px rgba(0,0,0,.12);
+  display:flex; flex-direction:column; align-items:center; gap:.35rem;
+  text-align:center;
+}
+
+#o-inwestycji .fact-k{
+  font-weight:600;
+  letter-spacing:.2px;
+  color:#7B6A58;                              /* taupe – etykieta */
+}
+
+#o-inwestycji .fact-v{
+  font-weight:800;
+  font-size:1.05rem;
+  color:var(--accent-2);                      /* Twój beż (ten „lepszy”) */
+  text-shadow:0 1px 0 rgba(0,0,0,.15);
+  padding:.15rem .5rem;
+  border-radius:8px;
+  background:linear-gradient(180deg, rgba(123,106,88,.14), rgba(123,106,88,.08));
+  box-shadow:inset 0 0 0 1px rgba(123,106,88,.35);
+}
