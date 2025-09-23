@@ -492,3 +492,20 @@ table.historia th, table.historia td{ padding:.25rem .3rem; }
 /* Hierarchia wagowa */
 .cena > div:first-child{ font-weight:800; font-size:1.1rem; }
 .cena > div:last-child{ font-weight:700; opacity:.98; }
+
+#lista-lokali .lokal{
+  text-align:center;   /* wycentrowanie całej zawartości */
+}
+
+#lista-lokali .lokal .kv{
+  justify-content:center;
+}
+
+#lista-lokali .lokal .kv p{
+  text-align:center;
+}
+
+#lista-lokali .lokal table.historia{
+  margin-left:auto;
+  margin-right:auto;   /* żeby tabelka też była wyśrodkowana */
+}
