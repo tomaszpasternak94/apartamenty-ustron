@@ -39,9 +39,18 @@
 </head>
 <body>
   <!-- HERO / NAV -->
-  <header class="hero">
+<header class="hero" style="--focus-x: 50%; --focus-y: 40%;">
+  <picture class="hero-media">
+    <!-- Ten sam obrazek dla mobile i desktop -->
+    <source srcset="assets/wiz6.jpg" media="(max-width: 768px)">
+    <img src="assets/wiz6.jpg" alt="Lokale w Ustroniu – wizualizacja inwestycji" loading="eager" fetchpriority="high">
+  </picture>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
     <h1>Lokale mieszkalne w Ustroniu</h1>
-    <p>Nowoczesny zespół 5 budynków w zabudowie szeregowej - 10 komfortowych mieszkań</p>
+    <p>Nowoczesny zespół 5 budynków w zabudowie szeregowej – 10 komfortowych mieszkań</p>
     <nav aria-label="Główna nawigacja">
       <a href="#o-inwestycji">O inwestycji</a>
       <a href="#oferty">Oferty</a>
@@ -49,7 +58,9 @@
       <a href="#lokalizacja">Lokalizacja</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
-  </header>
+  </div>
+</header>
+
 
   <main>
     <!-- O INWESTYCJI -->
