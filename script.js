@@ -64,8 +64,6 @@ async function renderLokale(){
         .map(k => `<li>${k.nazwa}: <span class="kwota">${Number(k.kwota).toLocaleString('pl-PL')} zł</span>${k.opcjonalnie ? ' (opcjonalnie)' : ''}</li>`)
         .join('') || '<li>Brak</li>';
 
-
-      // Historia: obsługa wpisów z kwotą całkowitą *albo* z ceną za m2
       const historiaHTML = (x.historia_ceny || [])
         .map(h => {
           const data = h.data || '';
@@ -75,7 +73,7 @@ async function renderLokale(){
           if ((total == null || Number.isNaN(total)) && per != null && pow > 0){
             total = Math.round(per * pow);
           }
-          // Domyślnie pokazujemy cenę całkowitą (brutto). Jeśli jej brak, pokaż cenę za m².
+          // Domyślnie pokaz cenę całkowitą brutto. Jeśli jej brak, pokaż cenę za m2.
           const display = (total != null && !Number.isNaN(total))
             ? formatPLN(total)
             : (per != null && !Number.isNaN(per)) ? formatPLNperM2(per) : '—';
