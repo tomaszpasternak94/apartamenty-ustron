@@ -18,26 +18,6 @@
     <categories><category>ECON</category></categories>
     <resources>
       <resource status="published">
-        <extIdent>USTRONRES202510280000000000000000000</extIdent>
-        <url>https://ustron-mieszkania.pl/open-data/daily/cennik_2025_10_28.csv</url>
-        <title>
-          <polish>Ceny ofertowe mieszkań ALU-CONSTRUCTION Zbigniew Wąsik 2025-10-28</polish>
-          <english>Offer prices ALU-CONSTRUCTION Zbigniew Wąsik 2025-10-28</english>
-        </title>
-        <description>
-          <polish>Dane dotyczące cen ofertowych mieszkań udostępnione 2025-10-28 zgodnie z art. 19b.</polish>
-          <english>Data on offer prices made available on 2025-10-28 pursuant to Art. 19b.</english>
-        </description>
-        <availability>local</availability>
-        <dataDate>2025-10-28</dataDate>
-        <specialSigns><specialSign>X</specialSign></specialSigns>
-        <hasDynamicData>false</hasDynamicData>
-        <hasHighValueData>true</hasHighValueData>
-        <hasHighValueDataFromEuropeanCommissionList>false</hasHighValueDataFromEuropeanCommissionList>
-        <hasResearchData>false</hasResearchData>
-        <containsProtectedData>false</containsProtectedData>
-      </resource>
-      <resource status="published">
         <extIdent>USTRONRES202510290000000000000000000</extIdent>
         <url>https://ustron-mieszkania.pl/open-data/daily/cennik_2025_10_29.csv</url>
         <title>
@@ -1210,6 +1190,26 @@
         </description>
         <availability>local</availability>
         <dataDate>2025-12-26</dataDate>
+        <specialSigns><specialSign>X</specialSign></specialSigns>
+        <hasDynamicData>false</hasDynamicData>
+        <hasHighValueData>true</hasHighValueData>
+        <hasHighValueDataFromEuropeanCommissionList>false</hasHighValueDataFromEuropeanCommissionList>
+        <hasResearchData>false</hasResearchData>
+        <containsProtectedData>false</containsProtectedData>
+      </resource>
+      <resource status="published">
+        <extIdent>USTRONRES202512270000000000000000000</extIdent>
+        <url>https://ustron-mieszkania.pl/open-data/daily/cennik_2025_12_27.csv</url>
+        <title>
+          <polish>Ceny ofertowe mieszkań ALU-CONSTRUCTION Zbigniew Wąsik 2025-12-27</polish>
+          <english>Offer prices ALU-CONSTRUCTION Zbigniew Wąsik 2025-12-27</english>
+        </title>
+        <description>
+          <polish>Dane dotyczące cen ofertowych mieszkań udostępnione 2025-12-27 zgodnie z art. 19b.</polish>
+          <english>Data on offer prices made available on 2025-12-27 pursuant to Art. 19b.</english>
+        </description>
+        <availability>local</availability>
+        <dataDate>2025-12-27</dataDate>
         <specialSigns><specialSign>X</specialSign></specialSigns>
         <hasDynamicData>false</hasDynamicData>
         <hasHighValueData>true</hasHighValueData>
