@@ -3,7 +3,7 @@
     "id": "56BH1",
     "nazwa": "Lokal mieszkalny NR 56BH1",
     "powierzchnia_m2": 58.96,
-    "status": "dostępny",
+    "status": "niedostępny",
     "cena_m2": 12000,
     "koszty_dodatkowe": [
       {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
@@ -71,7 +71,7 @@
     "id": "56BD1",
     "nazwa": "Lokal mieszkalny NR 56BD1",
     "powierzchnia_m2": 58.59,
-    "status": "dostępny",
+    "status": "niedostępnyy",
     "cena_m2": 12000,
     "koszty_dodatkowe": [
       {"nazwa":"Miejsce parkingowe 1", "kwota": 12300, "opcjonalnie": true},
